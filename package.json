@@ -1,0 +1,35 @@
+{
+  "name": "innermost-extension-store",
+  "version": "1.0.0",
+  "description": "innermost store",
+  "main": "lib/index.js",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "yarn type-check -- --watch",
+    "build": "yarn build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "bundle": "webpack"
+  },
+  "repository": "https://github.com/ncdhz/innermost-extension-store.git",
+  "author": "ncdhz",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.0.5",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.9",
+    "typescript": "^4.0.5",
+    "vue-loader": "^15.9.5",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  }
+}

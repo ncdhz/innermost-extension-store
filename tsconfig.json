@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "outDir": "./lib",
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*",
+        "innermost/*"
+      ],
+      "innermost/*": [
+        "innermost/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*", "innermost"
+  ],
+  "exclude": [
+    "node_modules",
+    "innermost"
+  ]
+}
