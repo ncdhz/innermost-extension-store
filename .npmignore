@@ -3,3 +3,4 @@ src
 *.log
 innermost
 node_modules
+.DS_Store
