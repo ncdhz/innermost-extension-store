@@ -9,7 +9,10 @@ module.exports = {
     libraryTarget: "commonjs2"
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json']
+    extensions: ['.ts', '.tsx', '.js', '.json'],
+    alias: {
+      '@': path.resolve('src')
+    }
   },
   module: {
     rules: [
