@@ -5,6 +5,9 @@ export default {
       title: 'Store menu',
       myExtension: 'My extension',
       extensionMarket: 'Extension market'
+    },
+    search: {
+      placeholder: 'Please enter the content'
     }
   },
   default: false
